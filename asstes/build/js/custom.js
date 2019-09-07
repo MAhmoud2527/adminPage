@@ -66,21 +66,7 @@ $('#fullScreen').on('click',function(){
 //i also try set as JSON.stringify but its undefined
 
 });
-// Change Language Code
-window.onload = function () {
-    var lang = window.localStorage.getItem('lang');
-    if(lang != null){
-		changeLang(lang);
-    }
-}
-function changeLang(lang) {
-    window.localStorage.setItem("lang", lang);
-    if(lang == 'ar'){
-            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/Arabic.css');
-    }else if(lang == 'en'){
-            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/English.css');
-    }
-}
+
 (function($,sr){
 
     var debounce = function (func, threshold, execAsap) {
