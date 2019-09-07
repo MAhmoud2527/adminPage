@@ -76,9 +76,9 @@ window.onload = function () {
 function changeLang(lang) {
     window.localStorage.setItem("lang", lang);
     if(lang == 'ar'){
-            document.getElementById('lnagLink').setAttribute('href', '../asstes/build/css/Arabic.css');
+            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/Arabic.css');
     }else if(lang == 'en'){
-            document.getElementById('lnagLink').setAttribute('href', '../asstes/build/css/English.css');
+            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/English.css');
     }
 }
 (function($,sr){
