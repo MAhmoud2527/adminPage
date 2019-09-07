@@ -1937,8 +1937,8 @@ html , body{
     border-radius: 50%
 }
 .site_title img {
-    max-height: 80px;
-    max-width: 180px;
+    max-height: 90px;
+    max-width: 220px;
 }
 .nav-sm .site_title img {
     max-height: 80px;
@@ -2605,7 +2605,7 @@ a:focus {
     display: block;
     height: 55px;
     margin: 0;
-    padding-right: 20px
+    /* padding-right: 20px */
 }
 .site_title:hover,
 .site_title:focus {
@@ -2667,8 +2667,8 @@ a:focus {
     padding: 9px
 }
 .panel_toolbox {
-    float: right;
-    min-width: 70px
+    float: left!important;
+    min-width: 45px
 }
 .panel_toolbox>li {
     float: left;
@@ -2853,7 +2853,8 @@ h2 {
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
     opacity: 1;
-    transition: all .2s ease
+    transition: all .2s ease;
+    margin-bottom: 50px;
 }
 .x_title {
     border-bottom: 2px solid #E6E9ED;
@@ -2866,9 +2867,10 @@ h2 {
 }
 .x_title h2 {
     margin: 5px 0 6px;
-    float: left;
+    float: right;
     display: block;
-    font-size: 16px;
+    font-size: 22px;
+    font-family: 'cairo';
 }
 .x_title h2 small {
     margin-left: 10px
@@ -3801,8 +3803,9 @@ button,
 .buttons,
 .btn,
 .modal-footer .btn+.btn {
-    margin-bottom: 5px;
-    margin-right: 5px
+    margin-bottom: unset;
+    margin-right: unset;
+    padding: unset;
 }
 .btn-group-vertical .btn,
 .btn-group .btn {
@@ -5699,7 +5702,7 @@ fieldset {
     width: 100%;
     border-top: 1px solid #ddd;
     padding: 10px 5px;
-    text-align: right;
+    text-align: left;
     margin-top: 10px
 }
 .actionBar .buttonDisabled {
@@ -5710,7 +5713,8 @@ fieldset {
     box-shadow: none
 }
 .actionBar a {
-    margin: 0 3px
+    margin: 0 3px;
+    padding: 4px 10px;
 }
 .wizard_verticle .wizard_content {
     width: 80%;
@@ -5947,8 +5951,9 @@ ul.notifications {
     background: #ccc
 }
 .dropzone {
-    min-height: 300px;
-    border: 1px solid #e5e5e5
+    min-height: 170px;
+    border: 1px solid #e5e5e5;
+    padding: 50px 20px;
 }
 
 /*
@@ -6171,4 +6176,21 @@ body:fullscreen {
   }
   .fa.pull-right{
     color: #066a80
+}.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{
+    text-align: center;
+}
+.table{
+    text-align: center;
+}
+.btn-mod{
+    background: #066a80;
+    border: #066a80;
+    color: #fff;
+
+}
+.btn-mod:hover{
+    background: #066a80;
+    border: #066a80;
+    color: #fff;
+
 }
