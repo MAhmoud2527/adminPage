@@ -323,23 +323,7 @@
    <script src="asstes/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
   <!-- Custom Theme Scripts -->
   <script src="asstes/build/js/custom.js"></script>
-<script>
-// Change Language Code
-window.onload = function () {
-    var lang = window.localStorage.getItem('lang');
-    if(lang != null){
-		changeLang(lang);
-    }
-}
-function changeLang(lang) {
-    window.localStorage.setItem("lang", lang);
-    if(lang == 'ar'){
-            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/Arabic.css');
-    }else if(lang == 'en'){
-            document.getElementById('lnagLink').setAttribute('href', 'asstes/build/css/English.css');
-    }
-}
-</script>
+
 
 
 </body>
