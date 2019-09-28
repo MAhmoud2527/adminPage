@@ -913,7 +913,7 @@ a:focus {
 }
 .panel_toolbox {
     float: right;
-    min-width: 45px
+    /* min-width: 45px */
 }
 .panel_toolbox>li {
     float: left;
@@ -4453,4 +4453,27 @@ body:fullscreen {
     border: #066a80;
     color: #fff;
 
+}
+.fa-edit , .fa-trash , .fa-info-circle{
+    padding: 0 9px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.fa-edit{
+    color: #052148;
+}
+.fa-trash{
+    color: #ef1414;
+}
+.fa-info-circle{
+    color: #fbaa25;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }
